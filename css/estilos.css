@@ -1,0 +1,384 @@
+body {
+  background-image: url("/imagenes/cocina.png");
+  background-size: fill;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000000a2; /* Fondo oscuro */
+  font-family: cursive;
+  font-weight: 300;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  color: #F8F9FA; /* Texto claro */
+}
+
+/* -------- NAV -------- */
+nav {
+  border: 2px solid #ffffff; /* Borde blanco */
+  border-radius: 15px;
+  width: 97%;
+  background-color: #000000d1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.img-logo {
+  width: 100px;
+  border-radius: 30px;
+}
+
+nav ul {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  transition: 0.5s all;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: #FFC300; /* Amarillo mostaza */
+}
+
+nav ul li:hover {
+  background-color: #a42f3b;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000; /* Texto oscuro para contraste */
+}
+
+/* -------- FEATURED -------- */
+.featured {
+  border: 2px solid #ffffff; /* Borde blanco */
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+  background-color: #000000aa;
+  padding: 40px;
+}
+
+.fp-video {
+  flex: 1 1 400px;
+  width: 400px;
+  height: 400px;
+}
+
+.ft-articulo {
+  flex: 1 1 300px;
+  padding: 10px;
+}
+
+.ft-articulo h1 {
+  border-bottom: solid thin #FFC300; /* Línea amarilla */
+  margin-bottom: 10px;
+  color: #FFC300; /* Título en amarillo */
+}
+/* -------- BOTÓN -------- */
+.botoncin button {
+  font-size: 1000px;
+  font-weight: 50px;
+  padding: 10px 15px;
+  font-family: cursive;
+  background-color: #FFC300;
+  cursor: pointer;  
+  border: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+
+.botoncin {
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #FFC300;
+  padding: 10px 15px;
+  padding-right: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.boton-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.boton-container a {
+  text-decoration: none;
+  color: #fdfdff;
+}
+
+.boton {
+  background-color: #FFC300; /* Amarillo */
+  color: #2B2D42;
+  padding: 12px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.boton:hover {
+  background-color: #6A040F;
+  color: #ffffff;
+}
+
+/* -------- ARTÍCULOS -------- */
+article {
+  border: 2px solid #ffffff; /* Borde amarillo */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.89); /* Fondo claro translúcido */
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.textos {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.art-image img {
+  align-items: space-between;
+  margin-bottom: 50px;
+  margin-left: 120px;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.art-image button{
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.art-cont {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  border-bottom: solid thin #FFC300; /* Línea amarilla */
+  color: #FFC300;
+}
+
+/* -------- BOTONES EN RECETAS -------- */
+#recetas button { 
+  font-size: 30px;
+  border: none;
+  font-family: cursive;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #FFC300; /* Amarillo */
+
+  padding: 20px 25px;
+}
+#recetas a {
+  text-decoration: none;
+  color: #2B2D42; /* Texto oscuro */
+}
+
+
+#recetas button:hover {
+  background-color: #6A040F;
+  color: #F8F9FA; /* Texto claro */
+}
+
+/* -------- FOOTER -------- */
+.footer {
+            background-color: #000000;
+            color: #ecf0f1;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+        
+        .footer-section h3 {
+            color: #e67e22;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #e67e22;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: #e67e22;
+            transform: translateX(5px);
+        }
+        
+        .footer-contact p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: #e67e22;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #34495e;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: #e67e22;
+            transform: translateY(-5px);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+        
+        .newsletter-form button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            background-color: #d35400;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 1px solid #34495e;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .footer-bottom p {
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+            }
+            
+            .footer-section {
+                margin-bottom: 30px;
+            }
+        }
+
+/* -------- RESPONSIVE -------- */
+/* Tablets */
+@media (max-width: 1024px) {
+  .featured {
+    flex-direction: column;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .featured {
+    flex-direction: column;
+  }
+
+  article {
+    text-align: center;
+  }
+
+  .art-cont {
+    text-align: left;
+  }
+
+  .columnas {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
